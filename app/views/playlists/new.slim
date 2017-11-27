@@ -1,0 +1,11 @@
+= form_for(@playlist) do |f|
+  div.field
+    = f.label :Name
+    br
+    = f.text_field :name
+  div.field
+    = f.label :number_of_votes
+    br
+    = f.text_field :number_of_votes
+  div.actions
+    = f.submit
