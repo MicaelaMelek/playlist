@@ -1,9 +1,15 @@
 h1 List of playlists
 
-table
-  thead
-    th
-      td Name
-      td Number of votes
+- if @playlists.any?
+      table#playlists
+        tr
+          th Name
+          th Number of Votes
 
-  tbody    
+          - for playlist in @playlists
+            tr
+              td.name = playlist.name
+              td.number_of_votes = playlist.number_of_votes
+- else
+  p No playlist found. Please add someone.
+    Thank you!
