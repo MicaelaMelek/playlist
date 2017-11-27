@@ -1,2 +1,2 @@
-class Track < ApplicationRecord
+class Track < ActiveRecord::Base
 end
