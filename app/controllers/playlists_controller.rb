@@ -1,4 +1,9 @@
 class PlaylistsController < ApplicationController
   def index
-  end 
+    @playlists = Playlist.all
+  end
+
+  def show
+    @playlist = Playlist.find(params[:id])
+  end
 end
